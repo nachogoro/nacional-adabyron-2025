@@ -1,7 +1,6 @@
 # Introducción a la solución
 
 Lo primero es obtener una lista de números primos desde el $1$ hasta $10^7$. Esto se puede lograr mediante la **criba de Eratóstenes**.
-    //for (auto &x : primes) cout << x << '\n';
 
 Luego, por cada número $n$ que queremos comprobar si es endogámico o no, realizamos lo siguiente:
 
@@ -9,9 +8,9 @@ Luego, por cada número $n$ que queremos comprobar si es endogámico o no, reali
 
 2. Mantendremos la suma de los elementos de la ventana en una variable $sum$, que inicialmente valdrá $2$ (único elemento que contiene la ventana al principio).
 
-3. Mientras $sum \neq n$ desplazaremos la ventana de la siguiente manera:
+3. Mientras no encontremos la lista de primos consecutivos que suman $n$, desplazaremos la ventana de la siguiente manera:
 - Si $sum < n$ desplazamos **el límite superior hacia la derecha** ($r \leftarrow r+1$) para aumentar $sum$.
-- Si $sum > n$ desplazamos el **límite inferior hacia la derecha** ($l \leftarrow l+1$) para decrementar $sum$. 
+- En caso contrario (es decir, si $sum > n$, o si $sum = n$ pero la ventana tiene tamaño $< 2$), desplazamos el límite inferior hacia la derecha ($l \leftarrow l + 1$) para decrementar $sum$.
 
   Si en algún momento la ventana se sale de la lista de primos, entonces $n$ **no** será un número endogámico.
 
@@ -21,5 +20,5 @@ Luego, por cada número $n$ que queremos comprobar si es endogámico o no, reali
 
 | Solución | Verificado con el juez |
 | :------: | :--------------------: |
-| [B.cpp](src/B.cpp) | :x: |
+| [B.cpp](src/B.cpp) | :white_check_mark: |
 
