@@ -63,7 +63,6 @@ int main() {
 			std::cin >> sizes[i];
 		}
 
-		std::sort(begin(sizes), end(sizes));
 		int64_t minBox = sizes[0];
 		Graph g(minBox);
 
