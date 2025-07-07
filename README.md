@@ -35,7 +35,7 @@ qué problemas necesitan más trabajo:
 | E        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | F        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 | G        | :white_check_mark: | :x: | :x: | :x: | :x: |
-| H        | :white_check_mark: | :x: | :x: | :x: | :x: |
+| H        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 | I        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | J        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | K        | :white_check_mark: | :x: | :x: | :x: | :x: |

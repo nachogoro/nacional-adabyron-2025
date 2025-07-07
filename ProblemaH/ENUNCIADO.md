@@ -27,9 +27,11 @@ prueba que vendrán a continuación.
 
 Para cada caso de prueba, en la primera línea se indican dos números separados
 por un espacio: el número $N$ de cubiletes ($2 \leq N \leq 1.000$) y el número
-$M$ de intercambios que se hacen ($0 \leq M \leq 1.000$).  A continuación se
-dan $M$ líneas, cada una con dos números distintos entre 1 y $N$ separados por
-un espacio, que representan dos cubiletes que se intercambian.
+$M$ de intercambios que se hacen ($0 \leq M \leq 1.000$).
+
+A continuación se dan $M$ líneas, cada una con dos números distintos entre 1 y
+$N$ separados por un espacio, que representan dos cubiletes que se
+intercambian.
 
 ## Salida
 Para cada caso de prueba se escribirá una línea con $N$ números separados por
