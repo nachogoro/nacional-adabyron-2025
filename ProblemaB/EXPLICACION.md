@@ -20,5 +20,5 @@ elementos, la ventana nunca podrá empezar más allá de $\frac{n}{2}$.
 
 | Solución | Verificado con el juez |
 | :------: | :--------------------: |
-| [B.cpp](src/B.cpp) | :x: |
+| [B.cpp](src/B.cpp) | :white_check_mark: |
 

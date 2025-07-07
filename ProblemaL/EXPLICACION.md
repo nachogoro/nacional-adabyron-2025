@@ -40,5 +40,5 @@ montículo de máximos, habremos llegado más tarde que la mitad de los días
 
 | Solución | Verificado con el juez |
 | :------: | :--------------------: |
-| [L.cpp](src/L.cpp) | :x: |
+| [L.cpp](src/L.cpp) | :white_check_mark: |
 

@@ -26,5 +26,5 @@ Para que exista solución, $m$ ha de ser un número entero.
 
 | Solución | Verificado con el juez |
 | :------: | :--------------------: |
-| [F.cpp](src/F.cpp) | :x: |
+| [F.cpp](src/F.cpp) | :white_check_mark: |
 
