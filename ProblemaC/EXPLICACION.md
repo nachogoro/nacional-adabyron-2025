@@ -125,7 +125,7 @@ Podemos automatizar este proceso utilizando un grafo. El grafo contendrá $c_0$
 vértices, cada uno representando una de las columnas (residuos mod $c_0$).
 
 Podemos ahora añadir una arista desde cada vértice $v_i$ con un peso $w$ igual al tamaño
-de cada caja, que irá al residuro correspondiente a $i + w \mod c_0$. Podemos
+de cada caja, que irá al residuo correspondiente a $i + w \mod c_0$. Podemos
 ignorar las aristas de peso $c_0$:
 
 Para nuestro ejemplo añadiríamos las siguientes aristas:
@@ -150,8 +150,8 @@ tachar.
 
 Podemos encontrar estos costes utilizando el algoritmo de Dijkstra.
 
-Por lo tanto, el mayor de dichos costes $t_max$ es el número más alto que
-representa el primer tachado de su columna. Por lo tanto, $t_max - c_0$ es el
+Por lo tanto, el mayor de dichos costes $t_{max}$ es el número más alto que
+representa el primer tachado de su columna. Por lo tanto, $t_{max} - c_0$ es el
 número de la fila anterior, aún sin tachar: el número más alto no obtenible
 comprando cajas enteras.
 

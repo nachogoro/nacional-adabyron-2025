@@ -33,13 +33,13 @@ qué problemas necesitan más trabajo:
 | C        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 | D        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | E        | :white_check_mark: | :x: | :x: | :x: | :x: |
-| F        | :white_check_mark: | :x: | :x: | :x: | :x: |
+| F        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 | G        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | H        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | I        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: |
 | J        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | K        | :white_check_mark: | :x: | :x: | :x: | :x: |
-| L        | :white_check_mark: | :x: | :x: | :x: | :x: |
+| L        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 
 ¡Anímate a contribuir incluso si ya existen soluciones para el problema que
 tenías en mente! El propósito de esta tabla es mostrar el estado actual del
