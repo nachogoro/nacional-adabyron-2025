@@ -19,5 +19,5 @@ inicial de la bolita que ha acabado en el cubilete $i$.
 
 | Solución | Verificado con el juez |
 | :------: | :--------------------: |
-| [H.cpp](src/H.cpp) | :x: |
+| [H.cpp](src/H.cpp) | :white_check_mark: |
 

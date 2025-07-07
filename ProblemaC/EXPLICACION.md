@@ -183,6 +183,6 @@ $n$ que tampoco sea alcanzable.
 
 | Solución | Verificado con el juez |
 | :------: | :--------------------: |
-| [C-vector.cpp](src/C-vector.cpp) | :x: |
-| [C-grafo.cpp](src/C-grafo.cpp) | :x: |
+| [C-vector.cpp](src/C-vector.cpp) | :white_check_mark: |
+| [C-grafo.cpp](src/C-grafo.cpp) | :white_check_mark: |
 

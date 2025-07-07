@@ -21,4 +21,3 @@ Luego, por cada número $n$ que queremos comprobar si es endogámico o no, reali
 | Solución | Verificado con el juez |
 | :------: | :--------------------: |
 | [B.cpp](src/B.cpp) | :white_check_mark: |
-
