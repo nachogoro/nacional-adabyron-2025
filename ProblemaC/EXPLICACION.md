@@ -26,7 +26,7 @@ incluye los números congruentes con 0 módulo 6.
 
 Se observa que si podemos conseguir una cierta cantidad de nuggets
 perteneciente a la columna $i$, podremos conseguir cualquier cantidad de
-nuggets debajo del mismo en la misma columna simplemente comprando una caja
+nuggets debajo del mismo en la misma columna simplemente comprando cajas
 $c_0$.
 
 En nuestro ejemplo, podemos comprar una caja de 6 nuggets, lo cual
