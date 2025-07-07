@@ -98,8 +98,8 @@ procedemos a tachar $n + 9$ y $n + 20$:
 ...
 ```
 
-Podemos repetir el proceso ahora para las columnas parcialmente tachadas que
-aún no hemos procesado:
+Podemos repetir el proceso ahora para todas las columnas donde hayamos
+realizado un tachado aún no procesado:
 - En la columna 5 hemos tachado 29. Tachamos ahora también 29+9=38 (ya tachado
   previamente) y 29+20=49.
 - En la columna 4 hemos tachado 40. Tachamos ahora también 40+9=49 (ya tachado
@@ -117,16 +117,36 @@ aún no hemos procesado:
 ...
 ```
 
-Vemos que ya ningún número posterior a 43 está sin tachar, por lo que la
-respuesta es 43.
+En el paso anterior hemos tachado 49 en la columna 1, así que tachamos a
+continuación 49+9=58 (ya tachado previamente) y 49+20=69 (ya tachado
+previamente).
+
+Ya no quedan columnas por procesar. Vemos que ya ningún número posterior a 43
+está sin tachar, por lo que la respuesta es 43.
+
+## Cómo simular este algoritmo utilizando un vector
+No podemos almacenar todos los números naturales en una matriz, puesto que hay
+infinitos. Sin embargo, no necesitamos almacenar toda la matriz, sino llevar
+una cuenta de cuál es el primer número tachado en cada columna. Para ello,
+necesitamos un vector de $c_0$ elementos (uno por columna).
+
+El vector comienza inicialmente con todos sus elementos inicializados a
+infinito (puesto que no hay ningún elemento tachado en ninguna columna).
+
+Almacenaremos en una cola qué números debemos tachar a continuación, y mientras
+queden números alcanzables por tachar procederemos a comprobar si dicho número
+se encuentra o no tachado. Si ya se encuentra tachado (porque hemos tachado un
+número de la misma columna menor o igual a él), ignoramos el número y pasamos
+al siguiente. Si no se encuentra aún tachado, lo tachamos y marcamos para
+tachar en el futuro los alcanzables desde él.
 
 ## Cómo encontrar la respuesta usando grafos
 Podemos automatizar este proceso utilizando un grafo. El grafo contendrá $c_0$
 vértices, cada uno representando una de las columnas (residuos mod $c_0$).
 
-Podemos ahora añadir una arista desde cada vértice $v_i$ con un peso $w$ igual al tamaño
-de cada caja, que irá al residuo correspondiente a $i + w \mod c_0$. Podemos
-ignorar las aristas de peso $c_0$:
+Podemos ahora añadir una arista desde cada vértice $v_i$ con un peso $w$ igual
+al tamaño de cada caja, que irá al residuo correspondiente a $i + w \mod c_0$.
+Podemos ignorar las aristas de peso $c_0$:
 
 Para nuestro ejemplo añadiríamos las siguientes aristas:
 | Desde | Hasta | Peso |
@@ -155,11 +175,14 @@ representa el primer tachado de su columna. Por lo tanto, $t_{max} - c_0$ es el
 número de la fila anterior, aún sin tachar: el número más alto no obtenible
 comprando cajas enteras.
 
-Si un nodo no es accesible desde el nodo 0, estamos en el caso INFINITO: para cualquier número inalcanzable $n$ será posible encontrar un número mayor que $n$ que tampoco sea alcanzable.
+Si un nodo no es accesible desde el nodo 0, estamos en el caso INFINITO: para
+cualquier número inalcanzable $n$ será posible encontrar un número mayor que
+$n$ que tampoco sea alcanzable.
 
 # Soluciones
 
 | Solución | Verificado con el juez |
 | :------: | :--------------------: |
-| [C.cpp](src/C.cpp) | :x: |
+| [C-vector.cpp](src/C-vector.cpp) | :x: |
+| [C-grafo.cpp](src/C-grafo.cpp) | :x: |
 
