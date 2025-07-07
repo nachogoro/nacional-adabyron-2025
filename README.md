@@ -39,11 +39,14 @@ qué problemas necesitan más trabajo:
 | I        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | J        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | K        | :white_check_mark: | :x: | :x: | :x: | :x: |
-| L        | :white_check_mark: | :x: | :x: | :x: | :x: |
+| L        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 
 ¡Anímate a contribuir incluso si ya existen soluciones para el problema que
 tenías en mente! El propósito de esta tabla es mostrar el estado actual del
 repositorio para quienes no tengan preferencias acerca de qué problema atacar.
+
+Puedes contribuir al repositorio [haciendo un pull
+request](https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/).
 
 ## Acerca de los problemas
 Para obtener una idea aproximada de la dificultad relativa de cada problema, se

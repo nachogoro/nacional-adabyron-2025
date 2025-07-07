@@ -23,17 +23,17 @@ así que ha decidido pedirte ayuda. ¿Puedes ayudarla?
 ## Entrada
 La entrada comienza con el número de casos de prueba que vienen a continuación.
 Cada caso consta de dos líneas. En la primera se indica el número $N$ ($0 \lt N
-leq 500.000$) de noches que Susana ha salido. En la segunda se muestra el
+\leq 500.000$) de noches que Susana ha salido. En la segunda se muestra el
 tiempo que ha estado fuera de casa cada noche después de medianoche, valores
 enteros entre $0$ y $10^9$.
 
 ## Salida
 Para cada caso de prueba se escribirá en una línea el número de noches en que
 Susana ha llegado a casa más tarde que al menos la mitad de las noches
-anteriores. Si el número de noches anteriores al día d es impar, se
+anteriores. Si el número de noches anteriores al día $d$ es impar, se
 contabilizará el día $d$ si el número de noches anteriores en que llegó antes
-que la hora de llegada del día d es estrictamente mayor que el número de noches
-en que llegó después o a la misma hora.
+que la hora de llegada del día $d$ es estrictamente mayor que el número de
+noches en que llegó después o a la misma hora.
 
 ## Entrada de ejemplo
 ```
