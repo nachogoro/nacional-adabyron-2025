@@ -50,14 +50,14 @@ la salida estándar.
 La aplicación terminará cuando se lea un caso de prueba con el número de
 segundos en 0.
 
-_10_
-**? 6**
-_NO_
-**? 5**
-_SI_
-**? 6**
-_SI_
-**=> 5**
+_10_  
+**? 6**  
+_NO_  
+**? 5**  
+_SI_  
+**? 6**  
+_SI_  
+**=> 5**  
 _0_
 
 ## Notas
