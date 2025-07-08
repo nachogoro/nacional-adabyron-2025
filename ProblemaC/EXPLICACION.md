@@ -4,7 +4,7 @@ Si tenemos $n$ cajas, cada una de capacidad $c_i$, con la menor de ellas de una
 capacidad $c_0$, podemos situar los números naturales en una cuadrícula de
 $c_0$ columnas.
 
-Tomamos como ejemplo aclaratorio los valores $c = {6, 9, 20}$, donde $c_0 = 6$:
+Tomamos como ejemplo aclaratorio los valores $c = \{6, 9, 20\}$, donde $c_0 = 6$:
 
 ```
  1  2  3  4  5  6
@@ -78,13 +78,13 @@ comprar no sólo una caja de 6 (que es lo que tacha el resto de la columna),
 sino también una caja de 9 o una de 20.
 
 Exploramos ahora por tanto de cada columna el primer número $n$ tachado, y
-procedemos a tachar $n + 9$ y $n + 20$:
+procedemos a tachar $n + 9$, $n + 20$ y todos los que queden por debajo:
 - El primer elemento tachado en la columna 6 es 6. Tachamos 6+9=15 (ya tachado
-  previamente), 6+20=26 (ya tachado previamente) y sus inferiores.
+  previamente), 6+20=26 (ya tachado previamente).
 - El primer elemento tachado en la columna 3 es 9. Tachamos 9+9=18 (ya tachado
   previamente), 9+20=29 y sus inferiores.
 - El primer elemento tachado en la columna 2 es 20. Tachamos 20+9=29 (ya
-  tachado previamente) y 20+20=40.
+  tachado previamente), 20+20=40 y sus inferiores.
 ```
  1  2  3  4  5  X
  7  8  X 10 11  X
@@ -101,7 +101,7 @@ procedemos a tachar $n + 9$ y $n + 20$:
 Podemos repetir el proceso ahora para todas las columnas donde hayamos
 realizado un tachado aún no procesado:
 - En la columna 5 hemos tachado 29. Tachamos ahora también 29+9=38 (ya tachado
-  previamente) y 29+20=49.
+  previamente), 29+20=49 y sus inferiores.
 - En la columna 4 hemos tachado 40. Tachamos ahora también 40+9=49 (ya tachado
   previamente) y 40+20=60 (ya tachado previamente).
 ```
@@ -121,10 +121,10 @@ En el paso anterior hemos tachado 49 en la columna 1, así que tachamos a
 continuación 49+9=58 (ya tachado previamente) y 49+20=69 (ya tachado
 previamente).
 
-Ya no quedan columnas por procesar. Vemos que ya ningún número posterior a 43
-está sin tachar, por lo que la respuesta es 43.
+Ya no quedan columnas por procesar. Vemos que el número sin tachar más alto es
+43, luego esa es la respuesta.
 
-## Cómo simular este algoritmo utilizando un vector
+## Opción 1: simular este algoritmo utilizando un vector
 No podemos almacenar todos los números naturales en una matriz, puesto que hay
 infinitos. Sin embargo, no necesitamos almacenar toda la matriz, sino llevar
 una cuenta de cuál es el primer número tachado en cada columna. Para ello,
@@ -140,13 +140,15 @@ número de la misma columna menor o igual a él), ignoramos el número y pasamos
 al siguiente. Si no se encuentra aún tachado, lo tachamos y marcamos para
 tachar en el futuro los alcanzables desde él.
 
-## Cómo encontrar la respuesta usando grafos
-Podemos automatizar este proceso utilizando un grafo. El grafo contendrá $c_0$
-vértices, cada uno representando una de las columnas (residuos mod $c_0$).
+## Opción 2: simular este algoritmo utilizando un grafo
+Alternativamente, podemos automatizar este proceso utilizando un grafo. El
+grafo contendrá $c_0$ vértices, cada uno representando una de las columnas
+(residuos mod $c_0$).
 
 Podemos ahora añadir una arista desde cada vértice $v_i$ con un peso $w$ igual
 al tamaño de cada caja, que irá al residuo correspondiente a $i + w \mod c_0$.
-Podemos ignorar las aristas de peso $c_0$:
+Podemos ignorar las aristas de peso $c_0$, que siempre conectarán un nodo
+consigo mismo:
 
 Para nuestro ejemplo añadiríamos las siguientes aristas:
 | Desde | Hasta | Peso |
