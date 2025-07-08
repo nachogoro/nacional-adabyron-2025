@@ -4,7 +4,7 @@ Si tenemos $n$ cajas, cada una de capacidad $c_i$, con la menor de ellas de una
 capacidad $c_0$, podemos situar los números naturales en una cuadrícula de
 $c_0$ columnas.
 
-Tomamos como ejemplo aclaratorio los valores $c = \{6, 9, 20\}$, donde $c_0 = 6$:
+Tomamos como ejemplo aclaratorio los valores $c = \\{ 6, 9, 20 \\}$, donde $c_0 = 6$:
 
 ```
  1  2  3  4  5  6
