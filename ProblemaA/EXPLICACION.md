@@ -1,6 +1,6 @@
 # Introducción a la solución
 
-En las primeras C líneas de la entrada se nos proporciona un grafo no dirigido y ponderado, $G_1$, que representa las ciudades y el tiempo de viaje entre ellas. Dadas dos ciudades $A$ y $B$ y el tiempo directo entre ellas $t_AB$,puede existir otra ciudad intermedia $C$ tal que el trayecto sea más corto:
+En las primeras C líneas de la entrada se nos proporciona un grafo no dirigido y ponderado, $G_1$, que representa las ciudades y el tiempo de viaje entre ellas. Dadas dos ciudades $A$ y $B$ y el tiempo directo entre ellas $t_{A,B}$,puede existir otra ciudad intermedia $C$ tal que el trayecto sea más corto:
 $$t_{A,C}+t_{B,C} < t_{A,B}$$
 Por tanto, es necesario modificar el grafo $G_1$ para que contenga los tiempos mínimos de viaje entre cada par de ciudades, permitiendo trayectos que pasen por otras poblaciones. esto se puede lograr usando el **algoritmo de Floyd-Warshall**.
 
