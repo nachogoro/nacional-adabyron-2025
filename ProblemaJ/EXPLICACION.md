@@ -3,14 +3,16 @@
 Sean $a_i$ y $m_i$ las notas del examen parcial $i$ de Ana y Mario, respectivamente. El problema consiste en demostrar que existe los pesos $p_1,...,p_N$ tales que:
 
 $$\begin{pmatrix}
-A \\ M
+A \\
+M
 \end{pmatrix} =
 \begin{pmatrix}
-a_1 \\ m_1
-\end{pmatrix} p_1
-+ \dots +
+a_1 \\
+m_1
+\end{pmatrix} p_1 + \dots +
 \begin{pmatrix}
-a_N \\ m_N
+a_N \\
+m_N
 \end{pmatrix} p_N
 $$
 
