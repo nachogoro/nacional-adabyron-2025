@@ -140,6 +140,14 @@ número de la misma columna menor o igual a él), ignoramos el número y pasamos
 al siguiente. Si no se encuentra aún tachado, lo tachamos y marcamos para
 tachar en el futuro los alcanzables desde él.
 
+Una vez que la cola esté vacía, habremos conseguido para columna el primer número
+tachado. La columna que tenga el mayor primer-número-tachado $m$ es la que nos
+interesa. El número de la fila anterior (es decir, $m - c_0$) es nuestra solución.
+
+Si algún número del vector es infinito (porque no hayamos tachado ningún número de
+dicha columna), la respuesta es INFINITO, porque para cualquier número inalcanzable
+$i$ que pensemos, $i + c_0$ también será inalcanzable.
+
 ## Opción 2: simular este algoritmo utilizando un grafo
 Alternativamente, podemos automatizar este proceso utilizando un grafo. El
 grafo contendrá $c_0$ vértices, cada uno representando una de las columnas
