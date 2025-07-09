@@ -42,10 +42,11 @@ duración del recuerdo.
 
 Cuando la aplicación sepa el último segundo en el que la abuela tuvo el
 recuerdo de la foto (antes de que empezáramos a viajar en el tiempo y a
-recordárselo), escribirá `=>` seguido del número de segundo.  A continuación
-aparece un ejemplo de ejecución. La letra cursiva se utiliza para indicar lo
-que la aplicación lee por la entrada estándar y la negrita lo que escribe por
-la salida estándar.
+recordárselo), escribirá `=>` seguido del número de segundo.
+
+A continuación aparece un ejemplo de ejecución. La letra cursiva se utiliza
+para indicar lo que la aplicación lee por la entrada estándar y la negrita lo
+que escribe por la salida estándar.
 
 La aplicación terminará cuando se lea un caso de prueba con el número de
 segundos en 0.
