@@ -1,4 +1,4 @@
-# Soluciones a los problemas de la final nacional del AdaByron 2024
+# Soluciones a los problemas de la final nacional del AdaByron 2025
 
 Este repositorio contiene los enunciados a los doce problemas planteados en la
 final nacional del concurso de programación competitiva [AdaByron
