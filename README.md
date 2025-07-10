@@ -1,4 +1,4 @@
-# Soluciones a los problemas de la final nacional del AdaByron 2024
+# Soluciones a los problemas de la final nacional del AdaByron 2025
 
 Este repositorio contiene los enunciados a los doce problemas planteados en la
 final nacional del concurso de programación competitiva [AdaByron
@@ -28,7 +28,7 @@ qué problemas necesitan más trabajo:
 
 | Problema | Enunciado          | Explicación        | ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) | ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) |
 | :------: | :----------------: | :---------:        | :--------------:   | :--------------:   | :--------------:   |
-| A        | :white_check_mark: | :x: | :x: | :x: | :x: |
+| A        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 | B        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 | C        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 | D        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
@@ -36,8 +36,8 @@ qué problemas necesitan más trabajo:
 | F        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 | G        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | H        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
-| I        | :white_check_mark: | :x: | :x: | :x: | :x: |
-| J        | :white_check_mark: | :x: | :x: | :x: | :x: |
+| I        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
+| J        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 | K        | :white_check_mark: | :x: | :x: | :x: | :x: |
 | L        | :white_check_mark: | :white_check_mark: | :x: | :white_check_mark: | :x: |
 
