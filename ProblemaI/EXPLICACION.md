@@ -2,7 +2,7 @@
 
 Para cada lado del polígono convexo que forma la mesa de billar hay como mucho una trayectoria entre la posición inicial, $I$ y la posicion final, $F$. Para saber si existe o no es necesario fijar un punto $C$ en la recta del segmento $AB$ (que llamaremos a partir de ahora $r$) que representa el punto de colisión con el lado.
 
-![](I.png)
+![](images/I.png)
 
 Gracias a que los ángulos de incidencia son iguales, el punto $I'$ que es simétrico a $I$ respecto de $r$ pertenece a la recta que forma $F$ y $C$ (a partir de ahora $r$). Por tanto podemos decir que:
 $$C = A + \lambda \overrightarrow{AB}$$
@@ -67,5 +67,6 @@ Por cada lado en el que el punto de colisión $C$ pertenece al segmento es una t
 
 | Solución | Verificado con el juez |
 | :------: | :--------------------: |
-| [I.cpp](src/B.cpp) | :white_check_mark: |
+| [I.cpp](src/I.cpp) | :white_check_mark: |
+| [I.py](src/I.py) | :white_check_mark: |
 
