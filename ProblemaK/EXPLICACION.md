@@ -6,16 +6,13 @@ Definimos $dp_{i,j}$ como el **número de  rectángulos de un solo color** que t
 
 Definimos $v_{i,j}$ como el **número de celdas consecutivas de mismo color que hay en la columna $j$**, comenzando desde la fila $i$ hacia arriba.
 
-Por ejemplo, dada la siguiente matriz de colores:
-$$\begin{pmatrix}
-6 & 6 & 6 & 6 \\
-6 & 6 & 1 & 6
-\end{pmatrix}$$
+Por ejemplo, dada la siguiente matriz de colores del enunciado:
+
+![](https://quicklatex.com/cache3/90/ql_415de6fbdb5d7a945d923c6627c3e590_l3.png)
+
 la matriz $v$ correspondiente es:
-$$\begin{pmatrix}
-1 & 1 & 1 & 1 \\
-2 & 2 & 1 & 2
-\end{pmatrix}$$
+
+![](https://quicklatex.com/cache3/6b/ql_e1df3841487f8c5c2a7ab7f36f4dba6b_l3.png)
 
 Los posibles rectángulos que contribuyen a $dp_{i,j}$ son:
 - **Los rectángulos verticales** (ancho $1$): hay exactamente $v_{i,j}$.
