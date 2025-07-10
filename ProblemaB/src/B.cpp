@@ -30,13 +30,18 @@ int main() {
 
 	uint64_t numero;
 	while (std::cin >> numero && numero != 0) {
-		const uint64_t mitad = numero / 2;
+		const uint64_t mitad = (numero + 1) / 2;
 
 		int izq = 0, der = 1;
 		uint64_t suma = primos[izq] + primos[der];
-		bool encontrado = false;
+		bool endogamico = false;
 
 		while (der < primos.size()) {
+			// No puede haber suma de 2+ primos distintos si el menor de ellos
+			// es mayor o igual que la mitad del número buscado
+			if (primos[izq] >= mitad)
+				break;
+
 			if (suma < numero)
 			{
 				++der;
@@ -47,26 +52,15 @@ int main() {
 			{
 				suma -= primos[izq];
 				++izq;
-
-				if (izq == der)
-				{
-					// Hemos encogido la ventana hasta w=1, no habrá solución
-					break;
-				}
 			} else {
-				std::cout << primos[izq] << " " << primos[der] << "\n";
-				encontrado = true;
+				endogamico = true;
 				break;
 			}
-
-			// No puede haber suma de 2+ primos si el menor de ellos es mayor
-			// que la mitad del número buscado
-			if (primos[izq] > mitad)
-				break;
 		}
 
-		if (!encontrado) {
+		if (endogamico)
+			std::cout << primos[izq] << " " << primos[der] << "\n";
+		else
 			std::cout << "NO\n";
-		}
 	}
 }
