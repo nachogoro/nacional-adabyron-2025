@@ -178,16 +178,17 @@ El coste del camino más corto desde el vértice 0 (comenzamos con 0 nuggets)
 hasta cada vértice $v_i$ es el primer número de la columna $v_i$ que podemos
 tachar.
 
-Podemos encontrar estos costes utilizando el algoritmo de Dijkstra.
+Podemos encontrar estos costes utilizando
+[**el algoritmo de Dijkstra**](https://es.wikipedia.org/wiki/Algoritmo_de_Dijkstra).
 
-Por lo tanto, el mayor de dichos costes $t_{max}$ es el número más alto que
-representa el primer tachado de su columna. Por lo tanto, $t_{max} - c_0$ es el
-número de la fila anterior, aún sin tachar: el número más alto no obtenible
-comprando cajas enteras.
+El mayor de dichos costes $t_{max}$ es el número más alto que representa el
+primer tachado de su columna. Por lo tanto, $t_{max} - c_0$ es el número de
+la fila anterior, aún sin tachar: el número más alto no obtenible comprando
+cajas enteras.
 
 Si un nodo no es accesible desde el nodo 0, estamos en el caso INFINITO: para
-cualquier número inalcanzable $n$ será posible encontrar un número mayor que
-$n$ que tampoco sea alcanzable.
+cualquier número inalcanzable $i$ será posible encontrar un número mayor que
+$i$ ($i + c_0$) que tampoco sea alcanzable.
 
 # Soluciones
 
