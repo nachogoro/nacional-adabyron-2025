@@ -2,12 +2,17 @@
 Dados dos mazos (de tamaños $n_1$ y $n_2$, respectivamente), se pide hallar la **dispersión mínima** al combinarlos, manteniendo el orden relativo de las cartas en cada mazo. Es decir, buscamos entre todas las **intercalaciones** posibles de ambas **secuencias** aquella que minimice la dispersión.
 
 La **dispersión total de un mazo** se define como:
+
 $$D = \sum d_x$$
+
 donde $d_x$ es la **dispersión de la familia** $x$, definida como:
+
 $$d_x = l_x-f_x$$
+
 siendo $f_x$ y $l_x$ la **posición de la primera y última carta** de la familia $x$, respectivamente. 
 
 Por tanto, la fórmula completa es:
+
 $$D = \sum{(l_x-f_x)}$$
 
 Esto nos permite observar que **no es necesario** calcular la dispersión de cada familia por separado. Se puede ir sumando los $l_x$ y restando los $f_x$ **a medida que se construye el mazo combinado**.
